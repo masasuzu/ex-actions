@@ -28,3 +28,6 @@ jobs:
       - name: test2
         if: ${{ inputs.Hoge }}
         run: echo true
+
+      - name: test3
+        run: echo ${{ inputs.Hoge }}
