@@ -9,4 +9,5 @@ jobs:
   deploy-dev:
     uses: ./.github/workflows/_test.yml
     with:
-      ENV: prd 
+      ENV: prd
+      Hoge: true
