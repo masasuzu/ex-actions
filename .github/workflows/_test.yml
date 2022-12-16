@@ -4,6 +4,10 @@ on:
       ENV:
         type: string
         required: true
+      Hoge:
+        type: boolean
+        required: true
+        
 
 jobs:
   deploy:
@@ -17,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: 
+      - name: test1
         if: ${{ inputs.ENV == 'prd' }}
+        run: echo true
+
+      - name: test2
+        if: ${{ inputs.Hoge }}
         run: echo true
