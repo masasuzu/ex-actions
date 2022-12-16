@@ -4,9 +4,8 @@ on:
       ENV:
         type: string
         required: true
-        
-        
- jobs:
+
+jobs:
   deploy:
     runs-on: ubuntu-latest
 
