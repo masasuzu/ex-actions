@@ -9,4 +9,4 @@ jobs:
   deploy-dev:
     uses: ./.github/workflows/_test.yml
     with:
-      ENV: dev 
+      ENV: prd 
